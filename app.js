@@ -46,7 +46,7 @@ function holding() {
   scores[activePlayer] +=roundScore;
   document.querySelector('#score-'+activePlayer).textContent=scores[activePlayer];
   if (scores[activePlayer]>=100) {
-    document.querySelector('.dice').style.display='none';
+    //document.querySelector('.dice').style.display='none';
     document.getElementById('name-'+activePlayer).textContent="Winner :)";
     document.querySelector('.player-' +activePlayer+ '-panel').classList.add('winner');
     document.querySelector('.player-' +activePlayer+ '-panel').classList.remove('active');
